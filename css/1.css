@@ -1,0 +1,69 @@
+body {
+    /* background: linear-gradient(to bottom, red, orange 14.29%, yellow 28.57%, green 42.86%, blue 57.14%, indigo 71.43%, violet);
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+}
+
+h1 {
+    font-size: 45px;
+    text-align: center;
+}
+p {
+    font-size: 20px;
+    margin-top:45px;
+}
+ol {
+    font-size: 25px;
+}
+a {
+    font-size: 25px;
+}
+
+.Container {
+    width: 80%; 
+    margin: 0 auto; 
+    margin-top: 20px; 
+    /* border: 3px solid black; */
+    padding: 20px;
+}
+.img-container {
+    display: flex;
+    justify-content: center;
+}
+.image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.name-container {
+    /* display: flex;
+    justify-content: space-between; */
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.student-number-container {
+    /* display: flex;
+    justify-content: space-between; */
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.hr {
+    width : 50%;
+    border: 1px solid black;
+    margin-top: 20px;
+}
+
+.navbar {
+    margin: 0 auto; 
+    width : 80%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
