@@ -7,13 +7,92 @@
     <link rel="stylesheet" href="../css/1.css">
 </head>
 <body>
-    <h1> WELCOME 승준 WEB </h1>
+    <h1 style="background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"> 다이어트 숨쉬기보다 쉽다 </h1>
     <div class="navbar">
-        <a href="1.html">1.html</a>
-        <a href="2.html">2.html</a>
-        <a href="3.html">3.html</a>
-        <a href="4.html">4.html</a>
-        <a href="5.html">5.html</a>
+        <a href="1.html">자기소개</a>
+        <a href="2.html">다이어트란?</a>
+        <a href="3.html">나의 대사량 구하기</a>
+        <a href="4.html">식단 설정법</a>
+        <a href="5.html">Tip</a>
     </div>
 </body>
+    <div class="Container2">
+        <h2>해리스 베네딕트 방정식이란</h2>
+        <p>
+            해리스 베네딕트 방정식은 식단 및 영양 관리에 사용되는 방법 중 하나입니다. 이 방정식은 개인의 기초 대사량을 추정하는 데 사용됩니다. 기초 대사량은 정상적인 조건에서 휴식 상태에서 소비되는 최소한의 에너지 양을 나타냅니다.
+        </p>
+
+        <h3>남성의 기초 대사량 구하는 방법</h3>
+        <p>
+            BMR = 66 + (13.7 × 체중(kg)) + (5 × 키(cm)) - (6.8 × 나이)
+        </p>
+        <h3>여성의 기초 대사량 구하는 방법</h3>
+        <p>
+            BMR = 655 + (9.6 × 체중(kg)) + (1.8 × 키(cm)) - (4.7 × 나이)
+        </p>
+
+        <h2>활동 대사량이란</h2>
+        <p>
+            기초 대사량은 휴식 상태에서 소비되는 최소한의 에너지 양을 나타내지만, 실제로는 활동을 하면서 소비되는 에너지가 더 많습니다. 이를 고려하여 활동 대사량을 계산합니다.
+        </p>
+
+        <h3>활동 대사량 계산</h3>
+        <p>
+            BMR × 활동 계수
+        </p>
+        <div class="form">
+            <h2>유지칼로리 구하기</h2>
+            <form>
+                <label for="gender">성별:</label>
+                <select id="gender" name="gender">
+                    <option value="male">남성</option>
+                    <option value="female">여성</option>
+                </select>
+    
+                <label for="weight">체중(kg):</label>
+                <input type="number" id="weight" name="weight" required>
+    
+                <label for="height">키(cm):</label>
+                <input type="number" id="height" name="height" required>
+    
+                <label for="age">나이:</label>
+                <input type="number" id="age" name="age" required>
+    
+                <label for="activity">활동 계수:</label>
+                <select id="activity" name="activity">
+                    <option value="1.2">주로 앉아서 활동하는 경우</option>
+                    <option value="1.375">가벼운 활동(가정 업무, 가벼운 운동)</option>
+                    <option value="1.55">보통 활동(일반적인 운동 3~5회/주)</option>
+                    <option value="1.725">활발한 활동(일반적인 운동 6~7회/주)</option>
+                    <option value="1.9">매우 활발한 활동(일반적인 운동 2회 이상/일)</option>
+                </select>
+    
+                <button type="submit">완료</button>
+            </form>
+        </div>
+    </div>
+
+    
+
+    <script>
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var gender = document.getElementById('gender').value;
+            var weight = parseFloat(document.getElementById('weight').value);
+            var height = parseFloat(document.getElementById('height').value);
+            var age = parseFloat(document.getElementById('age').value);
+            var activity = parseFloat(document.getElementById('activity').value);
+
+            var bmr;
+            if (gender === 'male') {
+                bmr = 66 + (13.7 * weight) + (5 * height) - (6.8 * age);
+            } else if (gender === 'female') {
+                bmr = 655 + (9.6 * weight) + (1.8 * height) - (4.7 * age);
+            }
+
+            var maintenanceCalories = bmr * activity;
+
+            alert('유지칼로리: ' + maintenanceCalories);
+        });
+    </script>
 </html>

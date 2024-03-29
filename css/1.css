@@ -7,10 +7,11 @@ body {
 h1 {
     font-size: 45px;
     text-align: center;
+
 }
 p {
     font-size: 20px;
-    margin-top:45px;
+    margin-top:20px;
 }
 ol {
     font-size: 25px;
@@ -23,38 +24,38 @@ a {
     width: 80%; 
     margin: 0 auto; 
     margin-top: 20px; 
-    /* border: 3px solid black; */
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.Container2 {
+    width: 80%; 
+    margin: 0 auto; 
+    margin-top: 20px; 
     padding: 20px;
 }
 .img-container {
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    /* justify-content: center; */
+    display: inline-block;
 }
 .image {
+    border : 2px solid black;
     width: 150px;
     height: 150px;
     border-radius: 50%;
 }
 
-.name-container {
-    /* display: flex;
-    justify-content: space-between; */
-    font-size: 30px;
+.profile {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    
-}
-
-.student-number-container {
-    /* display: flex;
-    justify-content: space-between; */
+    margin-top: 20px;
     font-size: 30px;
-    display: flex;
-    justify-content: center;
 }
 
 .hr {
-    width : 50%;
+    width : 80%;
     border: 1px solid black;
     margin-top: 20px;
 }
