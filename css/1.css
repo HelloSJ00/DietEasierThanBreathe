@@ -20,15 +20,7 @@ a {
     font-size: 18px;
     text-decoration: none; /* 밑줄 없애기 */
 }
-.Container {
-    color: #FFFFFF;
-    width: 80%; 
-    margin: 0 auto; 
-    margin-top: 20px; 
-    padding: 20px;
-    display: flex;
-    justify-content: space-evenly;
-}
+
 .Container2 {
     color: #FFFFFF;
     width: 80%; 
