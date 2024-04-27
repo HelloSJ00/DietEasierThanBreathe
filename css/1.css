@@ -1,26 +1,27 @@
-body {
-    /* background: linear-gradient(to bottom, red, orange 14.29%, yellow 28.57%, green 42.86%, blue 57.14%, indigo 71.43%, violet);
-    background-repeat: no-repeat;
-    background-attachment: fixed; */
+#openButton, #closeButton {
+    display: none; /* 기본적으로 버튼 숨기기 */
 }
-
-h1 {
-    font-size: 45px;
-    text-align: center;
-
+body {
+    background: linear-gradient(to bottom right, #145227, #b7e9c7);
+    height: 100vh;
+    margin: 0;
 }
 p {
+    color: #FFFFFF;
     font-size: 20px;
     margin-top:20px;
 }
 ol {
+    color: #FFFFFF;
     font-size: 25px;
 }
 a {
-    font-size: 25px;
+    color: #FFFFFF;
+    font-size: 18px;
+    text-decoration: none; /* 밑줄 없애기 */
 }
-
 .Container {
+    color: #FFFFFF;
     width: 80%; 
     margin: 0 auto; 
     margin-top: 20px; 
@@ -29,24 +30,18 @@ a {
     justify-content: space-evenly;
 }
 .Container2 {
+    color: #FFFFFF;
     width: 80%; 
     margin: 0 auto; 
     margin-top: 20px; 
     padding: 20px;
 }
 .img-container {
-    /* display: flex; */
-    /* justify-content: center; */
+    color: #FFFFFF;
     display: inline-block;
 }
-.image {
-    border : 2px solid black;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-}
-
 .profile {
+    color: #FFFFFF;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -55,16 +50,25 @@ a {
 }
 
 .hr {
+    color: #FFFFFF;
     width : 80%;
     border: 1px solid black;
     margin-top: 20px;
 }
 
-.navbar {
-    margin: 0 auto; 
-    width : 80%;
+.form {
+    align-items: center;
+}
+.form-row {
     display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
+    align-items: center; /* 세로 중앙 정렬 */
+    margin-bottom: 10px; /* 간격 추가 */
+}
+label {
+    width: 150px; /* 레이블의 너비 고정 */
+    margin-right: 10px; /* 레이블과 입력 필드 사이 간격 */
 }
 
+input, select {
+    flex-grow: 1; /* 입력 필드가 남은 공간을 모두 차지하도록 설정 */
+}
