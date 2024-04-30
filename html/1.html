@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/1.css">
     <link rel="stylesheet" href="../css/media.css">
+    <script src="https://kit.fontawesome.com/5df3484926.js" crossorigin="anonymous"></script>
     <style>
         .active-item {
             background-color: #000000; /* 배경색 변경 */
@@ -16,11 +17,19 @@
 </head>
 <body>
     <section class="Header">
-        <button id="openButton">메뉴</button>
+        <button id="openButton">
+            <div>
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </button>
         <h1 class="Title"> 다이어트 숨쉬기보다 쉽다 </h1>
     </section>
     <section class="navbar_parent">
-        <button id="closeButton">메뉴 닫기</button>
+        <button id="closeButton">
+            <div>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </button>
         <navbar class="navbar">
             <div class="navbar_item">
                 <a href="1.html">자기소개</a>
