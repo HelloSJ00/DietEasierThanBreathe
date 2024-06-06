@@ -1,92 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <script src="1.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/1.css">
-    <link rel="stylesheet" href="../css/media.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/1.css" />
+    <link rel="stylesheet" href="../css/media.css" />
+    <script
+      src="https://kit.fontawesome.com/5df3484926.js"
+      crossorigin="anonymous"
+    ></script>
     <style>
-        .active-item {
-            background-color: #000000; /* 배경색 변경 */
-            border : 1px solid black;
-        }
+      .active-item {
+        background-color: #000000; /* 배경색 변경 */
+        border: 1px solid black;
+      }
     </style>
     <style>
-      .ExerciseType {
-          background: #ffffff;
-          margin-top: 20px;
-          padding: 15px;
-          border-radius: 5px;
-          box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      .Exercise {
+        background: #ffffff;
+        padding: 15px;
+        margin-top: 20px;
+        border-radius: 5px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
       }
-      .ExerciseType h3 {
-          color: #145227;
-          margin-bottom: 10px;
+      .Exercise h3 {
+        color: #145227;
+        margin-bottom: 10px;
       }
-      .ExerciseType p {
-          color: #666666;
-          font-size: 14px;
-          line-height: 1.6;
+      .Exercise p {
+        color: #333;
+        font-size: 14px;
+        line-height: 1.6;
       }
-  </style>
-  
-    <title> 다이어트 숨쉬기보다 쉽다 </title>
-</head>
-<body>
+    </style>
+
+    <title>다이어트 숨쉬기보다 쉽다</title>
+  </head>
+  <body>
     <section class="Header">
-      <button id="openButton">메뉴</button>
-      <h1 class="Title"> 다이어트 숨쉬기보다 쉽다 </h1>
+      <button id="openButton">
+        <div>
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </button>
+      <h1 class="Title">다이어트 숨쉬기보다 쉽다</h1>
     </section>
     <section class="navbar_parent">
-        <button id="closeButton">메뉴 닫기</button>
-        <navbar class="navbar">
-            <div class="navbar_item">
-                <a href="1.html">자기소개</a>
-            </div>
-            <div class="navbar_item">
-                <a href="2.html">다이어트란?</a>
-            </div>
-            <div class="navbar_item">
-                <a href="3.html">대사량이란?</a>
-            </div>
-            <div class="navbar_item">
-                <a href="6.html">내 대사량 구하기</a>
-              </div>
-            <div class="navbar_item">
-                <a href="4.html">식단 설정법</a>
-            </div>
-            <div class="navbar_item">
-                <a href="8.html">다양한 식단</a>
-              </div>
-            <div class="navbar_item">
-              <a href="7.html">다이어트 운동</a>
-            </div>
-            <div class="navbar_item">
-              <a href="9.html">근력 운동</a>
-            </div>
-            <div class="navbar_item">
-              <a href="10.html">유산소 운동</a>
-            </div>
-            <div class="navbar_item">
-                <a href="5.html">다이어트 Tip</a>
-            </div>
-        </navbar>
+      <button id="closeButton">
+        <div>
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </button>
+      <navbar class="navbar">
+        <div class="navbar_item">
+          <a href="1.html">자기소개</a>
+        </div>
+        <div class="navbar_item">
+          <a href="2.html">다이어트란?</a>
+        </div>
+        <div class="navbar_item">
+          <a href="3.html">대사량이란?</a>
+        </div>
+        <div class="navbar_item">
+          <a href="6.html">내 대사량 구하기</a>
+        </div>
+        <div class="navbar_item">
+          <a href="4.html">식단 설정법</a>
+        </div>
+        <div class="navbar_item">
+          <a href="8.html">다양한 식단</a>
+        </div>
+        <div class="navbar_item">
+          <a href="7.html">다이어트 운동</a>
+        </div>
+        <div class="navbar_item">
+          <a href="9.html">근력 운동</a>
+        </div>
+        <div class="navbar_item">
+          <a href="10.html">유산소 운동</a>
+        </div>
+        <div class="navbar_item">
+          <a href="5.html">다이어트 Tip</a>
+        </div>
+      </navbar>
     </section>
     <section class="Content">
       <div class="Container2">
-          <h2>다이어트 운동</h2>
-          <div class="ExerciseType">
-              <h3>근력 운동</h3>
-              <p>근력 운동은 근육의 크기와 힘을 증가시키는 데 도움이 되며, 신체의 대사율을 향상시켜 더 많은 칼로리를 소모하게 합니다. 또한, 근육량이 증가함에 따라 일상 생활에서의 에너지 소비량도 증가합니다. 근력 운동은 체중 조절, 골밀도 향상, 그리고 전반적인 체력 강화에 효과적입니다.</p>
-          </div>
-          <div class="ExerciseType">
-              <h3>유산소 운동</h3>
-              <p>유산소 운동은 심장 박동수를 증가시켜 심장과 폐의 건강을 향상시키며, 지속적인 운동으로 많은 양의 칼로리를 소모합니다. 이는 체중 감소뿐만 아니라 심혈관 건강 증진에도 큰 도움이 됩니다. 유산소 운동은 스트레스 감소, 기분 개선, 그리고 지구력 증가에도 효과적입니다.</p>
-          </div>
+        <h2>다이어트 운동</h2>
+        <div class="ExerciseType">
+          <h3>근력 운동</h3>
+          <p>
+            근력 운동은 근육의 크기와 힘을 증가시키는 데 도움이 되며, 신체의
+            대사율을 향상시켜 더 많은 칼로리를 소모하게 합니다. 또한, 근육량이
+            증가함에 따라 일상 생활에서의 에너지 소비량도 증가합니다. 근력
+            운동은 체중 조절, 골밀도 향상, 그리고 전반적인 체력 강화에
+            효과적입니다.
+          </p>
+        </div>
+        <div class="ExerciseType">
+          <h3>유산소 운동</h3>
+          <p>
+            유산소 운동은 심장 박동수를 증가시켜 심장과 폐의 건강을 향상시키며,
+            지속적인 운동으로 많은 양의 칼로리를 소모합니다. 이는 체중 감소뿐만
+            아니라 심혈관 건강 증진에도 큰 도움이 됩니다. 유산소 운동은 스트레스
+            감소, 기분 개선, 그리고 지구력 증가에도 효과적입니다.
+          </p>
+        </div>
       </div>
-  </section>
-  
+    </section>
+
     <script src="../js/1.js"></script>
-</body>
+  </body>
 </html>

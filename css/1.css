@@ -1,66 +1,96 @@
-#openButton, #closeButton {
-    display: none; /* 기본적으로 버튼 숨기기 */
+#openButton,
+#closeButton {
+  display: none; /* 기본적으로 버튼 숨기기 */
 }
+/* 공통 스타일 */
 body {
-    background: linear-gradient(to bottom right, #145227, #b7e9c7);
-    height: 100vh;
-    margin: 0;
+  background: linear-gradient(to bottom right, #145227, #b7e9c7);
+  height: 100vh;
+  margin: 0;
+  font-family: "Arial", sans-serif; /* 세련된 폰트 설정 */
 }
+
+p,
+ol,
+a,
+.profile,
+.Container2 {
+  color: #ffffff;
+}
+
 p {
-    color: #FFFFFF;
-    font-size: 20px;
-    margin-top:20px;
+  font-size: 20px;
+  margin-top: 20px;
 }
+
 ol {
-    color: #FFFFFF;
-    font-size: 25px;
+  font-size: 25px;
 }
+
 a {
-    color: #FFFFFF;
-    font-size: 18px;
-    text-decoration: none; /* 밑줄 없애기 */
+  font-size: 18px;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .Container2 {
-    color: #FFFFFF;
-    width: 80%; 
-    margin: 0 auto; 
-    margin-top: 20px; 
-    padding: 20px;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 .img-container {
-    color: #FFFFFF;
-    display: inline-block;
+  display: inline-block;
 }
+
 .profile {
-    color: #FFFFFF;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 20px;
-    font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 30px;
 }
 
 .hr {
-    color: #FFFFFF;
-    width : 80%;
-    border: 1px solid black;
-    margin-top: 20px;
+  width: 80%;
+  border: 1px solid black;
+  margin-top: 20px;
 }
 
 .form {
-    align-items: center;
-}
-.form-row {
-    display: flex;
-    align-items: center; /* 세로 중앙 정렬 */
-    margin-bottom: 10px; /* 간격 추가 */
-}
-label {
-    width: 150px; /* 레이블의 너비 고정 */
-    margin-right: 10px; /* 레이블과 입력 필드 사이 간격 */
+  align-items: center;
 }
 
-input, select {
-    flex-grow: 1; /* 입력 필드가 남은 공간을 모두 차지하도록 설정 */
+.form-row {
+  display: flex;
+  align-items: center; /* 세로 중앙 정렬 */
+  margin-bottom: 10px; /* 간격 추가 */
+}
+
+label {
+  width: 150px; /* 레이블의 너비 고정 */
+  margin-right: 10px; /* 레이블과 입력 필드 사이 간격 */
+}
+
+input,
+select {
+  flex-grow: 1; /* 입력 필드가 남은 공간을 모두 차지하도록 설정 */
+}
+
+.navbar_item {
+  width: 80%;
+  padding: 10px 0;
+  margin-bottom: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  position: relative; /* ::after 요소의 위치를 부모 요소에 상대적으로 설정 */
+  overflow: hidden; /* 자식 요소가 부모 요소를 벗어나지 않도록 설정 */
+  /* background: rgba(255, 255, 255, 0.1); */
+  transition: background 0.3s ease, transform 0.3s ease;
 }
